@@ -4,7 +4,7 @@
 Chapter Review
 --------------
 1. What is a class?
-    *class is a user defined type.
+        *class is a user defined type.
     *class in C++ includes private data members and public function members **methods**.
 2. How does a class accomplish abstraction, encapsulation, and data hiding?
   abstraction: by hiding the details of implementation.
