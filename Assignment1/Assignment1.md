@@ -12,3 +12,6 @@ Chapter Review
 *data hiding: by making data members private/protected, so they are protected from outside world **other functions or classes**
 3. What is the relationship between an object and a class?
 *an object is an instance of a class
+4. In what way, aside from being functions, are class function members different from
+class data members?
+*class function members are usually public while data members are usually private
