@@ -20,3 +20,12 @@ Chapter Review
 ..3. Depositing an amount of money given by an argument
 ..4. Withdrawing an amount of money given by an argument
 Just show the class declaration, not the method implementations. (Programming Exercise 1 provides you with an opportunity to write the implementation.)
+```C++
+class Account{
+  private:
+  string name;
+  string accountNumber;
+  double balance;
+
+};
+```
