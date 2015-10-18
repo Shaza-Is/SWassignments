@@ -10,3 +10,5 @@ Chapter Review
 *abstraction: by hiding the details of implementation
 *encapsulation: by combining the data to methods to manipulate them, so the data is accessed except by using those methods.
 *data hiding: by making data members private/protected, so they are protected from outside world **other functions or classes**
+3. What is the relationship between an object and a class?
+*an object is an instance of a class
