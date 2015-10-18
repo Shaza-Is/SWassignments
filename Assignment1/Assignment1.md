@@ -23,9 +23,14 @@ Just show the class declaration, not the method implementations. (Programming Ex
 ```C++
 class Account{
   private:
-  string name;
-  string accountNumber;
+  std::string name;
+  std::string accountNumber;
   double balance;
-
+  public:
+  Account();
+  Account(std::string n, std::string acc, double b);
+  void displayAccount();
+  void deposit(double amount);
+  void withdraw(double amount);
 };
 ```
