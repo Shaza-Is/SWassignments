@@ -45,4 +45,6 @@ Just show the class declaration, not the method implementations. (Programming Ex
     balance = b;
     }
     ```
-    
+8. What is a default constructor? What is the advantage of having one?
+    -**default constructor**: is a constructor with the same name as the class with no parameters.
+    -the advantage of having a one is to not initialize an object with rubish data and have initial valid data defined for object data members.
