@@ -78,4 +78,8 @@ Just show the class declaration, not the method implementations. (Programming Ex
     };
     #endif
     ```
-    
+    10. What are this and *this ?
+        -this is a pointer to the current object, while
+        -*this is a reference to the object 
+        & they differ that a function that return this, it returns a pointer to the current object, while a function that returns *this returns a "clone" of the current object
+
