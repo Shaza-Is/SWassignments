@@ -7,9 +7,9 @@ Chapter Review
     -class is a user defined type.
     -class in C++ includes private data members and public function members **methods**.
 2. How does a class accomplish abstraction, encapsulation, and data hiding?
-    -abstraction: by hiding the details of implementation.
-    -encapsulation: by combining the data to methods to manipulate them, so the data is accessed except by using those methods.
-    -data hiding: by making data members private/protected, so they are protected from outside world **other functions or classes**
+    -**abstraction**: by hiding the details of implementation.
+    -**encapsulation**: by combining the data to methods to manipulate them, so the data is accessed except by using those methods.
+    -**data hiding**: by making data members private/protected, so they are protected from outside world **other functions or classes**
 3. What is the relationship between an object and a class?
     -an object is an instance of a class
 4. In what way, aside from being functions, are class function members different from class data members?
@@ -20,21 +20,29 @@ Chapter Review
     3. Depositing an amount of money given by an argument
     4. Withdrawing an amount of money given by an argument
 Just show the class declaration, not the method implementations. (Programming Exercise 1 provides you with an opportunity to write the implementation.)
-```C++
-class Account{
-  private:
-  std::string name;
-  std::string accountNumber;
-  double balance;
-  public:
-  Account();
-  Account(std::string n, std::string acc, double b);
-  void displayAccount();
-  void deposit(double amount);
-  void withdraw(double amount);
-};
-``` 
+    ```C++
+    class Account{
+      private:
+      std::string name;
+      std::string accountNumber;
+      double balance;
+      public:
+      Account();
+      Account(std::string n, std::string acc, double b);
+      void displayAccount();
+      void deposit(double amount);
+      void withdraw(double amount);
+    };
+    ```
 6. When are class constructors called? When are class destructors called?
-    *constructors are called when an object is created.
-    *destructors are called when an object is destroyed.
-
+    -constructors are called when an object is created.
+    -destructors are called when an object is destroyed.
+7. Provide code for a constructor for the bank account class from Chapter Review Question 5.
+    ```C++
+    Account::Account(std::string n, std::string acc, double b){
+    name = n;
+    accountNumber = acc;
+    balance = b;
+    }
+    ```
+    
