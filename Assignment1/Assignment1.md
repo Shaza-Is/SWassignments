@@ -39,12 +39,13 @@ Just show the class declaration, not the method implementations. (Programming Ex
     -destructors are called when an object is destroyed.
 7. Provide code for a constructor for the bank account class from Chapter Review Question 5.
     ```C++
-    //just method declaration
-    Account::Account(std::string n, std::string acc, double b){
-      name = n;
-      accountNumber = acc;
-      balance = b;
-    }
+
+      //just method declaration
+      Account::Account(std::string n, std::string acc, double b){
+        name = n;
+        accountNumber = acc;
+        balance = b;
+      }
     ```
 8. What is a default constructor? What is the advantage of having one?
     -**default constructor**: is a constructor with the same name as the class with no parameters.
@@ -74,8 +75,8 @@ Just show the class declaration, not the method implementations. (Programming Ex
     void sell(long num, double price);
     void update(double price);
     void show()const;
-    const *Stock topval(const Stock & s) const;     
-    };
+    const *Stock & topval(const Stock & s) const;     
+    }; 
     #endif
     ```
     10. What are this and *this ?
