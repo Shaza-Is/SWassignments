@@ -75,7 +75,11 @@ Just show the class declaration, not the method implementations. (Programming Ex
     void sell(long num, double price);
     void update(double price);
     void show()const;
-    const *Stock & topval(const Stock & s) const;     
+    const *Stock & topval(const Stock & s) const;
+    string const & return_company();
+    int const & return_shares();
+    double const & return_share_val();
+    double const & return_total_val();    
     }; 
     #endif
     ```
