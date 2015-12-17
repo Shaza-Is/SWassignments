@@ -1,14 +1,15 @@
 /* That's the design by contract implemntation file */
 
 #pragma once
-#include "stdafx.h"
+//#include "stdafx.h"
 #include <string>
 #include <stdexcept>
 #include <ostream>
 #include <sstream>
-#include <crtdbg.h>
+//#include <crtdbg.h>
+//#include <assert.h>
 
-#if defined(_DEBUG)
+#ifndef NDEBUG
 
 	#define REQUIRE0(assertion) \
 	if (!(assertion)) throw Require(__FILE__, __LINE__)
@@ -61,6 +62,8 @@ public:
         stream << "File: " << file() << "\nLine: " << line() << "\n" << errorPrefix() << ". " << what() << "\n";
         return stream.str();
     }
+    //destructor
+    ~DesignByContractException() throw() {}
 protected:
 	// Commands
     void setErrorPrefix(const std::string& errorPrefix)
